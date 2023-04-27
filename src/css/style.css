@@ -1,0 +1,15 @@
+.keyboard-wrapper {
+ margin: 0 auto;
+}
+
+.textarea {
+  display: block;
+  width: 700px;
+  height: 200px;
+  margin: 10px auto;
+}
+
+.keyboard {
+  width: 700px;
+  margin: 10px auto;
+}
