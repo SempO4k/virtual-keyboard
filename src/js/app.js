@@ -1,6 +1,12 @@
 import '../style.css';
 import Keyboard from './Keyboard';
 
+const cssClasses = {
+  PAGE_WRAPPER: 'page-wrapper',
+  TEXTAREA: 'textarea',
+  KEYBOARD: 'keyboard',
+};
+
 function createElement(tagName, className) {
   const element = document.createElement(tagName);
   element.className = className;
@@ -8,9 +14,9 @@ function createElement(tagName, className) {
 }
 
 function createComponent() {
-  const component = createElement('div', 'keyboard-wrapper');
-  const textArea = createElement('textarea', 'textarea');
-  const keyboard = createElement('div', 'keyboard');
+  const component = createElement('div', cssClasses.PAGE_WRAPPER);
+  const textArea = createElement('textarea', cssClasses.TEXTAREA);
+  const keyboard = createElement('div', cssClasses.KEYBOARD);
   component.appendChild(textArea);
   component.appendChild(keyboard);
   return component;

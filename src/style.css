@@ -1,4 +1,4 @@
-.keyboard-wrapper {
+.page-wrapper {
  margin: 0 auto;
 }
 
@@ -7,6 +7,7 @@
   width: 700px;
   height: 200px;
   margin: 10px auto;
+  padding: 10px;
 }
 
 .keyboard {
