@@ -1,3 +1,6 @@
+import '../style.css';
+import Keyboard from './Keyboard';
+
 function createElement(tagName, className) {
   const element = document.createElement(tagName);
   element.className = className;
@@ -15,3 +18,7 @@ function createComponent() {
 
 // const keyboardComponent = createComponent();
 document.body.appendChild(createComponent());
+
+const keyb = new Keyboard();
+keyb.generateButton('a', 'b');
+document.querySelector('.keyboard').appendChild(keyb.generateButton('a', 'b'));
