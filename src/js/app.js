@@ -1,5 +1,6 @@
 import '../style.css';
-import Keyboard from './Keyboard';
+import keyData from '../data/buttons';
+import Button from './Button';
 
 const cssClasses = {
   PAGE_WRAPPER: 'page-wrapper',
@@ -22,9 +23,20 @@ function createComponent() {
   return component;
 }
 
-// const keyboardComponent = createComponent();
 document.body.appendChild(createComponent());
 
-const keyb = new Keyboard();
-keyb.generateButton('a', 'b');
-document.querySelector('.keyboard').appendChild(keyb.generateButton('a', 'b'));
+function generateButtons(keyLayout) {
+  const buttons = [];
+  keyLayout.forEach((key) => {
+    buttons.push(new Button(key));
+  });
+  // console.log(buttons);
+  return buttons;
+}
+function renderButtonToDom() {
+  const boardContainer = document.querySelector('.keyboard');
+  generateButtons(keyData).forEach((key) => {
+    boardContainer.append(key.generateButton());
+  });
+}
+renderButtonToDom();

@@ -18,7 +18,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "D:/rsschool/virtual-keyboard/node_modules/.bin/webpack --progress",
-    "start": "D:/rsschool/virtual-keyboard/node_modules/.bin/webpack-dev-server"
+    "start": "D:/rsschool/virtual-keyboard/node_modules/.bin/webpack-dev-server",
+    "buildPC": "D:/rs_school/virtual-keyboard/node_modules/.bin/webpack --progress",
+    "startPC": "D:/rs_school/virtual-keyboard/node_modules/.bin/webpack-dev-server"
   },
   "author": "",
   "license": "ISC"

@@ -11,6 +11,72 @@
 }
 
 .keyboard {
-  width: 700px;
+  width: 710px;
   margin: 10px auto;
+  padding: 5px;
+  background: #888;
+  border: 3px solid #222;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5px;
+}
+
+.key {
+  display: inline-block;
+  min-width: 40px;
+  height: 40px;
+  background: #444;
+  margin-left: 6px;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+}
+
+.Tab,
+.Delete,
+.CapsLock,
+.LeftShift,
+.RightShift,
+.LeftAlt,
+.RightAlt,
+.LeftCtrl,
+.RightCtrl,
+.Backspace,
+.Enter,
+.MetaLeft,
+.ArrowLeft,
+.ArrowRight,
+.ArrowUp,
+.ArrowDown {
+  background: #222;
+}
+
+.Tab {
+  width: 50px;
+}
+
+.Backspace,
+.CapsLock,
+.LeftShift {
+  width: 100px;
+}
+
+.Delete {
+  width: 44px;
+}
+.Tab {
+  width: 50px;
+}
+.Enter,
+.RightShift {
+  width: 86px;
+}
+
+.Space {
+  width: 330px;
+}
+
+.hidden {
+  display: none;
 }
