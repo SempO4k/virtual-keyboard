@@ -17,10 +17,9 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "D:/rsschool/virtual-keyboard/node_modules/.bin/webpack --progress",
-    "start": "D:/rsschool/virtual-keyboard/node_modules/.bin/webpack-dev-server",
-    "buildPC": "D:/rs_school/virtual-keyboard/node_modules/.bin/webpack --progress",
-    "startPC": "D:/rs_school/virtual-keyboard/node_modules/.bin/webpack-dev-server"
+    "build": "webpack --progress",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "start": "webpack serve"
   },
   "author": "",
   "license": "ISC"

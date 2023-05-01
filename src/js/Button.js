@@ -11,7 +11,7 @@ export default class Button {
 
     for (let i = 0; i < 2; i += 1) {
       const lang = document.createElement('span');
-      lang.className = (i === 1) ? 'en' : 'ru hidden';
+      lang.className = (i === 1) ? 'lang en' : 'lang ru hidden';
       buttonCase.append(lang);
       const caseDown = document.createElement('span');
       const caseUp = document.createElement('span');

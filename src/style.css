@@ -31,20 +31,32 @@
   color: #fff;
   text-align: center;
   line-height: 40px;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+
+/* .key:hover {
+  background: #9e9c9c;
+  border-radius: 10px;
+} */
+
+.active {
+  background: #cecccc;
+  border-radius: 20px;
 }
 
 .Tab,
 .Delete,
 .CapsLock,
-.LeftShift,
-.RightShift,
-.LeftAlt,
-.RightAlt,
-.LeftCtrl,
-.RightCtrl,
+.ShiftLeft,
+.ShiftRight,
+.AltLeft,
+.AltRight,
+.ControlLeft,
+.ControlRight,
 .Backspace,
 .Enter,
-.MetaLeft,
+.OSLeft,
 .ArrowLeft,
 .ArrowRight,
 .ArrowUp,
@@ -58,7 +70,7 @@
 
 .Backspace,
 .CapsLock,
-.LeftShift {
+.ShiftLeft {
   width: 100px;
 }
 
@@ -69,7 +81,7 @@
   width: 50px;
 }
 .Enter,
-.RightShift {
+.ShiftRight {
   width: 86px;
 }
 
