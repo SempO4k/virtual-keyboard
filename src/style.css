@@ -21,7 +21,7 @@
   row-gap: 5px;
 }
 
-.key {
+.keyboard .key {
   display: inline-block;
   min-width: 40px;
   height: 40px;
@@ -34,34 +34,21 @@
   cursor: pointer;
   transition: all .1s ease-in-out;
 }
-
+.caseDown,
+.caseUp,
+.shiftCaps,
+.caps {
+  display:block;
+  width:100;
+}
 /* .key:hover {
   background: #9e9c9c;
   border-radius: 10px;
 } */
 
-.active {
+.keyboard .key.active {
   background: #cecccc;
   border-radius: 20px;
-}
-
-.Tab,
-.Delete,
-.CapsLock,
-.ShiftLeft,
-.ShiftRight,
-.AltLeft,
-.AltRight,
-.ControlLeft,
-.ControlRight,
-.Backspace,
-.Enter,
-.OSLeft,
-.ArrowLeft,
-.ArrowRight,
-.ArrowUp,
-.ArrowDown {
-  background: #222;
 }
 
 .Tab {
