@@ -79,3 +79,8 @@
 .hidden {
   display: none;
 }
+
+.description,
+.language {
+  text-align: center;
+}

@@ -36,9 +36,18 @@ function createComponent() {
   const component = createElement('div', cssClasses.PAGE_WRAPPER);
   const textArea = createElement('textarea', cssClasses.TEXTAREA);
   const keyboard = createElement('div', cssClasses.KEYBOARD);
+  const os = createElement('p', 'description');
+  const language = createElement('p', 'language');
   component.appendChild(textArea);
   component.appendChild(keyboard);
+  component.appendChild(os);
+  component.appendChild(language);
   return component;
+}
+
+function appendDescription() {
+  document.querySelector('.description').textContent = 'Создано в Windows OS';
+  document.querySelector('.language').textContent = 'Для переключения языка использовать LeftShift + LeftAlt';
 }
 
 document.body.appendChild(createComponent());
@@ -258,6 +267,7 @@ function mouseUpHandler() {
 window.addEventListener('load', () => {
   if (keyData) {
     renderButtonToDom();
+    appendDescription();
     keyDownHandler();
     keyUpHandler();
     mouseDownHandler();
